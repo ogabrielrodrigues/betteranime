@@ -21,9 +21,6 @@ export default async function collectDownloadURLs(anime: Anime, browser: Browser
   )
 
   const collectedURLs = []
-  episodes.pop()
-  episodes.pop()
-  episodes.pop()
 
   for await (const episode of episodes) {
     await page.goto(episode)
